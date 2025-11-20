@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Mobile-friendly viewport with min/max zoom -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.1, maximum-scale=5.0, user-scalable=yes">
+  <title>GSFPC RD</title>
+  <style>
+      body {
+          margin: 0;
+          padding: 0;
+          font-family: Arial, sans-serif;
+          text-align: center;
+      }
+
+      h2 {
+          font-size: 6vw; /* scales with screen width */
+          margin: 20px 0;
+      }
+
+      /* Responsive iframe container */
+      .iframe-container {
+          position: relative;
+          width: 100%;
+          max-width: 1200px;
+          padding-bottom: 123%; /* Aspect ratio: 858/700 ~ 123% */
+          margin: 0 auto;
+      }
+
+      .iframe-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: none;
+      }
+
+      /* Button for mobile users */
+      .open-btn {
+          display: inline-block;
+          padding: 15px 25px;
+          margin: 20px 0;
+          font-size: 20px;
+          background-color: #0078D4;
+          color: white;
+          text-decoration: none;
+          border-radius: 5px;
+      }
+
+      .open-btn:hover {
+          background-color: #005A9E;
+      }
+  </style>
+</head>
+<body>
+
+  <h2>GSFPC - REFRIGERATION DIVISION</h2>
+
+  <!-- iframe for desktop view -->
+  <div class="iframe-container">
+    <iframe 
+        src="https://1drv.ms/x/c/8bf4cd2ce18f484f/IQQZAUBhCUyKT6UqS_BvIphsAe4V9iEUHcmfJbSYcGbaVF8?Item=%27Dashboard%27!A1%3AAC40&amp;wdInConfigurator=True" 
+        allowfullscreen>
+    </iframe>
+  </div>
+
+  <!-- Button for mobile users to open directly (pinch-zoom works) -->
+  <a href="https://1drv.ms/x/c/8bf4cd2ce18f484f/IQQZAUBhCUyKT6UqS_BvIphsAe4V9iEUHcmfJbSYcGbaVF8?Item='Dashboard'!A1%3AAC40" 
+     target="_blank" class="open-btn">
+    Open Dashboard (Zoomable)
+  </a>
+
+</body>
+</html>
